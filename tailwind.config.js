@@ -16,6 +16,18 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    fontSize: {
+      t14: "14px",
+      t16: "16px",
+      t18: "18px",
+      t24: "24px",
+      t32: "32px",
+      t48: "48px",
+      
+    },
+    fontFamily: {
+      Sora: ['Sora', 'sans-serif'],
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
