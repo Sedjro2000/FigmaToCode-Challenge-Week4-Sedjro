@@ -2,43 +2,46 @@ import React from 'react'
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import ButtonUi from '@/components/ui/Button/ButtonUi'
-import Social1Icon from '../../../assets/social-icon1.png'
-import Social2Icon from '../../../assets/social-icon2.png'
-import Social3Icon from '../../../assets/social-icon3.png'
-import Social4Icon from '../../../assets/social-icon4.png'
-import Talk from '@/assets/talk.png'
+import Social1Icon from '@/assets/social-icon1.png'
+import Social2Icon from '@/assets/social-icon2.png'
+import Social3Icon from '@/assets/social-icon3.png'
+import Social4Icon from '@/assets/social-icon4.png'
+
+
 const ContactForm = () => {
   return (
     <div className='max-w-screen-lg mx-auto mt-8'>
-        <div className='flex flex-col md:flex-row max-w-[1216px] '>
-
-            <div className='flex flex-col flex-1 p-4 pr-12 space-y-6 md:space-y-0 md:space-x-6 md:flex-col md:w-1/2 border border-green-800'>
+        <div className='flex space-x-12 flex-wrap md:flex-nowrap  md:space-x-8 my-16 '>
+            <div className='flex flex-col space-y-4 text-zinc-500'>
                 <Input 
                     type="text"
-                    id="name"
                     name="name"
+                    id="name"
                     placeholder="Your Name"
-                    className="w-full md:w-[500px]" 
+                    className=""
                 />
-                <Input 
+                 <Input 
                     type="email"
-                    id="email"
                     name="email"
+                    id="email"
                     placeholder="Email"
-                    className="w-full md:w-[500px]" 
+                    className=""
                 />
-                <Input 
+                 <Input 
                     type="url"
-                    id="website"
                     name="website"
+                    id="website"
                     placeholder="Your Website(if exists)"
-                    className="w-full md:w-[500px]" 
+                    className=""
                 />
                 <Textarea 
-                    placeholder="How can I help ?"
-                    className="w-full md:w-[500px]"
-                    rows="4"
+                    rows={4} 
+                    name="message"  
+                    id="message"  
+                    placeholder="How can I help"  
+                    className=""
                 />
+
                 <div className='flex space-x-4 w-full md:w-[500px]'>
                     <ButtonUi 
                         text="Get in Touch"
@@ -66,20 +69,31 @@ const ContactForm = () => {
                     />
 
                 </div>
-            </div> 
 
-        <div className='border border-red-800 flex flex-col w-full md:w-[608px]'>
-            <h1 className='font-bold text-t24 font-Sora text-black capitalize flex'>
-                let's <span><img src={Talk} alt="Talk" className='h-5 w-5 ml-2 mr-2'  /></span>for 
-                something special
-               
-            </h1>
-                
-           
-        </div> 
+            </div>
+            <div className='flex flex-col space-y-4'>
+                <div className='p-4'>
+                    <h2 className='font-normal capitalize text-black font-Sora text-start text-t32 '> 
+                        <div>my <span className='font-bold'>Let's Talk</span></div>
+                    </h2>
+                </div>
+                <p className='font-normal font-Sora text-zinc-500'>
+                    Let’s
+                    talk
+                    for
+                    Something special
+                    I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.
+                </p>
+                <div className='flex flex-col text-black font-Sora text-t16 font-bold space-y-4'>
+                    <a href="">Youremail@gmail.com</a>
+                    <a href="">1234567890</a>
+                </div>
 
-      </div>
+            </div>
 
+        </div>
+
+       
     </div>
     
   )

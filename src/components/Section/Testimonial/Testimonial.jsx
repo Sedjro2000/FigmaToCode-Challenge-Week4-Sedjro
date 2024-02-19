@@ -3,9 +3,11 @@ import TestimonialCard from './TestimonialCard'
 
 const Testimonial = () => {
   return (
-    <div className='max-w-screen-lg mx-auto mb-4'>
-      <div className='p-4'>
-            <h2 className='font-bold capitalize text-black font-Sora text-center text-t24'> My Testimonial</h2>
+    <div className='max-w-screen-lg mx-auto my-4'>
+       <div className='p-4'>
+            <h2 className='font-normal capitalize text-black font-Sora text-center text-t32 '> 
+              <div>my <span className='font-bold'>testimonial</span></div>
+            </h2>
         </div>
       <div className='grid grid-cols-1 gap-4 sm:grid-cols-3  mt-8 '>
        <TestimonialCard 

@@ -22,9 +22,11 @@ function App() {
     <Skills />
     <Experience />
     <AboutMe />
-    <Testimonial />
-    
     <Projects />
+    <Testimonial />
+    <ContactForm />
+    
+    
    
     </>
   )
